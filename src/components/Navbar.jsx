@@ -14,14 +14,18 @@ const Easynavbar = () => {
       <div className="overflow">
         <nav className="container_2 container_mobile">
           <img src={logo} alt="" />
-          <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Blog</li>
-            <li>Careers</li>
-          </ul>
-          <button className="nav-bttn">Request Invite</button>
+          <div className={`wrap-nav-btn ${menuOpen ? "active" : ""}`}>
+            <ul className="nav-links">
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+            <div>
+              <button className="nav-bttn">Request Invite</button>
+            </div>
+          </div>
 
           <div className="hamburger" onClick={toggleMenu}>
             <img src={hamburger} alt="" />
@@ -35,15 +39,17 @@ const Easynavbar = () => {
 export default Easynavbar;
 
 let Navbar = styled.div`
+background-color: hsl(0, 0%, 98%);
+position: fixed;
+    z-index: 1000;
+    width: 100%;
   nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
     background-color: hsl(0, 0%, 98%);
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
+    
 
     ul {
       display: flex;
@@ -80,27 +86,29 @@ let Navbar = styled.div`
       &:hover {
         background-color: blue;
       }
+      }
     }
+    .wrap-nav-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
   }
 
   @media (max-width: 911px) {
-    nav {
-      position: relative;
-    }
-    nav ul {
+    .wrap-nav-btn {
       padding: 10px;
       display: block !important;
       position: absolute;
       background-color: hsl(233, 8%, 62%);
-      color: black;
       width: 200px;
-      top: 20px;
-      right: 44px;
+      top: 66px;
+      right: 0;
       transform: translateX(350px);
       z-index: 1000;
     }
-    .nav-bttn{
-      display: none;
+    .nav-links {
+      display: block !important;
     }
 
     .active {
@@ -109,6 +117,7 @@ let Navbar = styled.div`
     nav ul li {
       padding: 10px;
       font-size: 16px;
+      color: black !important;
     }
     .container_mobile {
       max-width: 850px;
