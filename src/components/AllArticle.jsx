@@ -1,18 +1,18 @@
-import React from 'react'
-import articleData from '../assets/json/ArticleData';
-// import Article from "./Article";
-import styled from "styled-components"
+import React from "react";
+import articleData from "../assets/json/ArticleData";
+import Article from "./Article";
+import styled from "styled-components";
 
 const AllArticle = () => {
   return (
     <All>
       <h1>Latest Article</h1>
-      {articleData.map((article) => (
+      {articleData.map((lastarticle) => (
         <Article
-        img={article.img}
-        name={article.name}
-        header={article.header}
-        word={article.word}
+          img={lastarticle.img}
+          name={lastarticle.name}
+          header={lastarticle.header}
+          word={lastarticle.word}
         />
       ))}
     </All>
@@ -21,7 +21,4 @@ const AllArticle = () => {
 
 export default AllArticle;
 
-let All = styled.div`
-
-`;
-
+let All = styled.div``;

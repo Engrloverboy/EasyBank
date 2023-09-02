@@ -1,7 +1,7 @@
 const ArticleData = [
   {
     id: 1,
-    img: "../assets/image/icon-currency.jpg",
+    img: "../assets/image/image-currency.jpg",
     name: "Claire Robinson",
     header: "Receive money in any currency with no fees",
     word: "The world is getting smaller and we're becoming more mobile. So why should you forced to only receive money in a single..",
@@ -9,7 +9,7 @@ const ArticleData = [
 
   {
     id: 2,
-    img: "../assets/image/icon-currency.jpg",
+    img: "../assets/image/image-currency.jpg",
     name: "Claire Robinson",
     header: "Receive money in any currency with no fees",
     word: "The world is getting smaller and we're becoming more mobile. So why should you forced to only receive money in a single..",
@@ -17,7 +17,7 @@ const ArticleData = [
 
   {
     id: 3,
-    img: "../assets/image/icon-currency.jpg",
+    img: "../assets/image/image-currency.jpg",
     name: "Claire Robinson",
     header: "Receive money in any currency with no fees",
     word: "The world is getting smaller and we're becoming more mobile. So why should you forced to only receive money in a single..",
@@ -25,7 +25,7 @@ const ArticleData = [
 
   {
     id: 4,
-    img: "../assets/image/icon-currency.jpg",
+    img: "../assets/image/image-currency.jpg",
     name: "Claire Robinson",
     header: "Receive money in any currency with no fees",
     word: "The world is getting smaller and we're becoming more mobile. So why should you forced to only receive money in a single..",
