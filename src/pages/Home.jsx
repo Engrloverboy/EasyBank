@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Section from "../components/WhyEasyBank";
-import AllArticle from "../components/Article";
+import Article from "../components/Article";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Section />
-      <AllArticle />
+      <Article />
     </div>
   );
 };
