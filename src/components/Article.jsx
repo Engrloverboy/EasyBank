@@ -7,7 +7,7 @@ import Confetti from "../assets/image/image-confetti.jpg";
 
 const LastArticle = () => {
   return (
-    <Article className="container_mobile container">
+    <Article className="container container_2">
       <h1>Latest Articles</h1>
       <div className="flex-article">
         <div className="all-article">
