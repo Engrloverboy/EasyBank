@@ -110,6 +110,10 @@ let Article = styled.div`
       font-size: 24px;
       font-weight: 200;
       max-width: 400px;
+
+      &:hover {
+        color: hsl(136, 65%, 51%);
+      }
     }
     .word {
       color: hsl(233, 8%, 62%);
