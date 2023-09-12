@@ -131,7 +131,7 @@ let Article = styled.div`
       flex-wrap: wrap;
     }
     .all-article {
-      max-width: 40%;
+ width: 40%;
     }
     .image-div {
       max-width: 277px;
