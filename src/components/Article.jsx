@@ -4,9 +4,11 @@ import Blog from "./Blog";
 
 const LastArticle = () => {
   return (
-    <Article className="container container_2">
-      <h1>Latest Articles</h1>
-      <Blog />
+    <Article>
+      <section className="container container_2">
+        <h1>Latest Articles</h1>
+        <Blog />
+      </section>
     </Article>
   );
 };
@@ -65,7 +67,7 @@ let Article = styled.div`
       flex-wrap: wrap;
     }
     .all-article {
-      width:48%;
+      width: 48%;
     }
     img {
       height: 200px;
